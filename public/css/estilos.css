@@ -1,0 +1,220 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #2b2620;
+  background: #f7f3ec;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #17675d;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0f4942;
+}
+
+.encabezado,
+.pie,
+.contenedor {
+  width: min(70rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1rem;
+  border-bottom: 1px solid #ddd5c8;
+}
+
+.encabezado nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #2b2620;
+}
+
+.contenedor {
+  flex: 1;
+  padding-block: 3rem;
+}
+
+.hero,
+.estado,
+.detalle,
+.panel-formulario {
+  max-width: 45rem;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  border: 1px solid #ddd5c8;
+  border-radius: 1.25rem;
+  background: #fffdf8;
+  box-shadow: 0 1rem 2.5rem rgb(75 63 48 / 8%);
+}
+
+h1 {
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.05;
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+.etiqueta {
+  margin-bottom: 0.5rem;
+  color: #8a6d1f;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.boton,
+button {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.65rem;
+  background: #17675d;
+  color: white;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+  background: #0f4942;
+  color: white;
+}
+
+.cabecera-pagina {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cabecera-pagina h1 {
+  margin-bottom: 0;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  padding: 1.25rem;
+  border: 1px solid #ddd5c8;
+  border-radius: 0.9rem;
+  background: white;
+}
+
+.tarjeta h2 {
+  margin-bottom: 0.25rem;
+}
+
+.estado {
+  font-weight: 700;
+  color: #17675d;
+}
+
+.estado-vacio {
+  padding: 2rem;
+  border: 1px dashed #c8bda9;
+  border-radius: 0.9rem;
+  background: #fffdf8;
+  text-align: center;
+}
+
+.formulario {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.formulario label {
+  font-weight: 800;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #a79c8e;
+  border-radius: 0.5rem;
+  background: white;
+  color: inherit;
+  font: inherit;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario button {
+  justify-self: start;
+  margin-top: 0.5rem;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #f4ca76;
+  outline-offset: 3px;
+}
+
+.error {
+  padding: 0.75rem 1rem;
+  border-left: 0.3rem solid #b42318;
+  background: #ffe9e5;
+  color: #7a271a;
+  font-weight: 700;
+}
+
+.pie {
+  padding-block: 1.25rem;
+  border-top: 1px solid #ddd5c8;
+  color: #655f57;
+  text-align: center;
+}
+
+.pie p {
+  margin: 0;
+}
+
+@media (max-width: 38rem) {
+  .encabezado,
+  .cabecera-pagina {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

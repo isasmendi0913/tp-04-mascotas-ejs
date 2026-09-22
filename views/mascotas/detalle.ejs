@@ -1,0 +1,9 @@
+<article class="detalle">
+  <img src="/img/mascota.svg" alt="Imagen representativa de <%= mascota.nombre %>" width="120" height="120">
+  <p class="etiqueta"><%= mascota.especie %></p>
+  <h1><%= mascota.nombre %></h1>
+  <p><strong>Edad:</strong> <%= mascota.edad %> año<%= mascota.edad === 1 ? "" : "s" %></p>
+  <p><strong>Estado:</strong> <%= mascota.estado %></p>
+  <p><strong>Descripción:</strong> <%= mascota.descripcion %></p>
+  <a class="boton" href="/mascotas">Volver al catálogo</a>
+</article>

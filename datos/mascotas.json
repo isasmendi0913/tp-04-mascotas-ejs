@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "especie": "Perro",
+    "edad": 3,
+    "estado": "Disponible",
+    "descripcion": "Mestiza tranquila, sociable con niños y otros perros. Esterilizada y vacunada."
+  },
+  {
+    "id": 2,
+    "nombre": "Milo",
+    "especie": "Gato",
+    "edad": 1,
+    "estado": "Disponible",
+    "descripcion": "Juguetón y curioso. Se lleva bien con otros gatos. Usa piedras sanitarias."
+  },
+  {
+    "id": 3,
+    "nombre": "Nala",
+    "especie": "Perro",
+    "edad": 5,
+    "estado": "En proceso",
+    "descripcion": "Tamaño mediano, muy compañera. Ideal para hogar con patio."
+  },
+  {
+    "id": 4,
+    "nombre": "Simba",
+    "especie": "Gato",
+    "edad": 2,
+    "estado": "Disponible",
+    "descripcion": "Tranquilo y afectuoso. Le gusta dormir al sol y los mimos."
+  },
+  {
+    "id": 5,
+    "nombre": "Rocky",
+    "especie": "Perro",
+    "edad": 7,
+    "estado": "Adoptado",
+    "descripcion": "Adulto mayor, muy obediente. Busca un hogar tranquilo donde descansar."
+  },
+  {
+    "id": 6,
+    "nombre": "Burbujas",
+    "especie": "Pescado",
+    "edad": 1,
+    "estado": "Disponible",
+    "descripcion": "Pez dorado activo. Requiere acuario filtrado de al menos 40 litros."
+  },
+  {
+    "id": 7,
+    "nombre": "Manuelita",
+    "especie": "Tortuga",
+    "edad": 4,
+    "estado": "Disponible",
+    "descripcion": "Tortuga de agua dulce muy pacífica. Necesita estanque o acuaterrario con zona seca y luz UVB."
+  },
+  {
+    "id": 8,
+    "nombre": "Milky",
+    "especie": "Gato",
+    "edad": 1,
+    "estado": "Disponible",
+    "descripcion": "Juguetón y curioso. Se lleva bien con otros gatos. Usa piedras sanitarias."
+  },
+  {
+    "id": 9,
+    "nombre": "Luna",
+    "especie": "Perro",
+    "edad": 5,
+    "estado": "En proceso",
+    "descripcion": "Tamaño mediano, muy compañera. Ideal para hogar con patio."
+  },
+  {
+    "id": 10,
+    "nombre": "Argorn",
+    "especie": "Gato",
+    "edad": 2,
+    "estado": "Disponible",
+    "descripcion": "Tranquilo y afectuoso. Le gusta dormir al sol y los mimos."
+  },
+  {
+    "id": 11,
+    "nombre": "Peluso",
+    "especie": "Perro",
+    "edad": 7,
+    "estado": "Adoptado",
+    "descripcion": "Adulto mayor, muy obediente. Busca un hogar tranquilo donde descansar."
+  },
+  {
+    "id": 12,
+    "nombre": "Dorado",
+    "especie": "Pescado",
+    "edad": 1,
+    "estado": "Disponible",
+    "descripcion": "Pez dorado activo. Requiere acuario filtrado de al menos 40 litros."
+  },
+  {
+    "id": 13,
+    "nombre": "Pepe",
+    "especie": "Tortuga",
+    "edad": 4,
+    "estado": "Disponible",
+    "descripcion": "Tortuga de agua dulce muy pacífica. Necesita estanque o acuaterrario con zona seca y luz UVB."
+  }
+]

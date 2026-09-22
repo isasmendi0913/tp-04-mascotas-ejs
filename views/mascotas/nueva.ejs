@@ -1,0 +1,57 @@
+<section class="panel-formulario">
+  <p class="etiqueta">NUEVO INGRESO</p>
+  <h1><%= titulo %></h1>
+
+  <% if (error) { %>
+    <p class="error" role="alert"><%= error %></p>
+  <% } %>
+
+  <form action="/mascotas" method="post" class="formulario">
+    <label for="nombre">Nombre</label>
+    <input
+      id="nombre"
+      name="nombre"
+      type="text"
+      value="<%= valores.nombre ?? '' %>"
+      required
+    >
+
+    <label for="especie">Especie</label>
+    <input
+      id="especie"
+      name="especie"
+      type="text"
+      value="<%= valores.especie ?? '' %>"
+      required
+    >
+
+    <label for="edad">Edad (en años)</label>
+    <input
+      id="edad"
+      name="edad"
+      type="number"
+      min="0"
+      step="1"
+      value="<%= valores.edad ?? '' %>"
+      required
+    >
+
+    <label for="estado">Estado</label>
+    <select id="estado" name="estado" required>
+      <option value="">Seleccioná una opción</option>
+      <option value="Disponible" <%= valores.estado === "Disponible" ? "selected" : "" %>>Disponible</option>
+      <option value="En proceso" <%= valores.estado === "En proceso" ? "selected" : "" %>>En proceso</option>
+      <option value="Adoptado" <%= valores.estado === "Adoptado" ? "selected" : "" %>>Adoptado</option>
+    </select>
+
+    <label for="descripcion">Descripción</label>
+    <textarea
+      id="descripcion"
+      name="descripcion"
+      rows="5"
+      required
+    ><%= valores.descripcion ?? '' %></textarea>
+
+    <button type="submit">Guardar mascota</button>
+  </form>
+</section>
