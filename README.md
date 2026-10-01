@@ -10,8 +10,6 @@ la aplicacion produce paginas html renderizadas en el servidor, utilizando un la
 ## instalacion
 
 ---en consola ingresar "npm install"----y ejecute
---- ingrese "npm init -y "
---- ingrese "npm install express ejs express-ejs-layouts "
 --- ingresar npm start----- inicializa 
 la aplicacion queda disponible en http://localhost:3000. para detener el servidor: ctrl + c.
 
@@ -32,7 +30,7 @@ views/layouts/main.ejs: estructura html general compartida por todas las paginas
   -* views/mascotas/nueva.ejs: formulario de nueva mascota.
   -* views/no-encontrado.ejs: pagina html para errores 404.
 
-## -> diferencia entre layout, vista y parcial
+## -> diferencia entre layout, vista y parcial.
 
   -layout: es el marco html general que se repite en todas las paginas. define el <head>, la estructura del <body> y los puntos donde se insertan el encabezado, el contenido variable y el pie.
   -vista: es el contenido especifico de una pagina. cada ruta renderiza una vista distinta (inicio.ejs, lista.ejs, detalle.ejs, nueva.ejs, no-encontrado.ejs).
@@ -51,8 +49,9 @@ express.static convierte la carpeta public en la raiz publica del servidor. por 
 
 ## formulario
 el formulario usa POST /mascotas y express.urlencoded para interpretar los datos enviados. la validacion minima comprueba:
-  campos completos (nombre, especie, estado, descripcion), edad numerica mayor o igual a cero, estado dentro de los valores permitidos (Disponible, En proceso, Adoptado). si hay error, responde con estado 400 y vuelve a renderizar el formulario conservando los valores ingresados. si todo es valido, agrega la mascota al arreglo en memoria y redirige a /mascotas.
-datos enviados mediante res.render
+  campos completos (nombre, especie, estado, descripcion), edad numerica mayor o igual a cero, estado dentro de los valores permitidos ("En adopción", "Reservada", "Adoptada"). si hay error, responde con estado 400 (muestra la alerta : <% if (error) { %>
+    <p class="error" role="alert"><%= error %></p> <% } %> ) y vuelve a renderizar el formulario conservando los valores ingresados. si todo es valido, agrega la mascota al arreglo en memoria y redirige a /mascotas.
+datos enviados mediante res.render (http://localhost:3000/mascotas)
 res.render(vista, datos) envia un objeto con datos a la plantilla ejs. por ejemplo:
 JavaScript
 res.render("mascotas/lista", {
