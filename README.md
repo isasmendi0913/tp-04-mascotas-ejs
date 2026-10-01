@@ -2,7 +2,6 @@
 
 ## descripcion
 
-asd
 
 aplicacion web construida con express y ejs que permite consultar mascotas en adopcion y agregar registros temporalmente mediante un formulario. los datos iniciales se cargan desde un archivo json y las nuevas mascotas se agregan en memoria.
 

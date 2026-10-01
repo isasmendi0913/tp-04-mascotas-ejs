@@ -38,10 +38,11 @@
 
     <label for="estado">Estado</label>
     <select id="estado" name="estado" required>
-      <option value="">Seleccioná una opción</option>
-      <option value="Disponible" <%= valores.estado === "Disponible" ? "selected" : "" %>>Disponible</option>
-      <option value="En proceso" <%= valores.estado === "En proceso" ? "selected" : "" %>>En proceso</option>
-      <option value="Adoptado" <%= valores.estado === "Adoptado" ? "selected" : "" %>>Adoptado</option>
+      <option value="">-- Seleccionar estado --</option>
+      <option value="En adopción" <%= valores.estado === 'En adopción' ? 'selected' : '' %>>En adopción</option>
+      <option value="Reservada" <%= valores.estado === 'Reservada' ? 'selected' : '' %>>Reservada</option>
+      <option value="Adoptada" <%= valores.estado === 'Adoptada' ? 'selected' : '' %>>Adoptada</option>
+      <!-- <option value="error" <%= valores.estado === 'error' ? 'selected' : '' %>>error</option> -->
     </select>
 
     <label for="descripcion">Descripción</label>
